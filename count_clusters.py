@@ -90,7 +90,7 @@ for key, value in converted_d.items():
             in_cluster += 1
         else:
             se_cluster += 1
-    if (in_cluster + se_cluster) > 1: # only include clusters of sizes containing more than one atom
+    if (in_cluster + se_cluster) > 0: # only include clusters of sizes containing more than one atom
         cluster_composition[key] = "In"+str(in_cluster)+"Se"+str(se_cluster)  
     
 #? Create the dict giving the number of same kind clusters
